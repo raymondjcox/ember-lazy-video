@@ -2,10 +2,10 @@ import Ember from 'ember';
 
 export default {
   apiUrl: function(videoId) {
-    return '//vimeo.com/api/oembed.json?url=http%3A//vimeo.com/' + videoId;
+    return 'https://vimeo.com/api/oembed.json?url=http%3A//vimeo.com/' + videoId;
   },
   embedUrl: function(videoId) {
-    return '//player.vimeo.com/video/' + videoId;
+    return 'https://player.vimeo.com/video/' + videoId;
   },
   thumbnailUrl: function(videoId) {
     var apiUrl = this.apiUrl(videoId);
